@@ -4,11 +4,20 @@
         <a class="head-menu__link" href="#">Check your upgrade eligibility ></a>
         <a class="head-menu__link" href="#">Learn more ></a>
     </div>
-    <div class="models__mode"></div>
+    <div class="models__mode">
+        <ul>
+            <li class="models__mode__item"><a class="models__mode__link" href="#">Mode</a></li>
+            <li class="models__mode__item"><a class="models__mode__link" href="#">Option1</a></li>
+            <li class="models__mode__item"><a class="models__mode__link" href="#">Option2</a></li>
+            <li class="models__mode__item"><a class="models__mode__link" href="#">Option3</a></li>
+        </ul>
+    </div>
     <p class="models__title">Choose a Terminal model.</p>
     <div class="selections">
         <div class="selections__item">
-            <img class="selections__item__img" src="img/terminal_solo.png">
+            <div class="selections__item__imgwrapper">
+                <img class="selections__item__imgwrapper__img" src="img/terminal_solo.png">
+            </div>
             <div class="selections__item__info">
                 <p class="info__new">New</p>
                 <p class="info__title">Terminal Solo</p>
@@ -18,12 +27,14 @@
             </div>
         </div>
         <div class="selections__item">
-            <img class="selections__item__img" src="img/terminal_max.png">
+            <div class="selections__item__imgwrapper">
+                <img class="selections__item__imgwrapper__img" src="img/terminal_max.png">
+            </div>
             <div class="selections__item__info">
                 <p class="info__new"></p>
                 <p class="info__title">Terminal Max</p>
                 <p class="info__size">Dual 38-inch display</p>
-                <button>Select</button>
+                <button style="background-color: gray;">Select</button>
                 <p class="info__desc">From $5,400.00/mo with the Terminal Upgrade Program <br>Or pay now from $19,999.</p>
             </div>
         </div>

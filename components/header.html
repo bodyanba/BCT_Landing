@@ -1,31 +1,55 @@
 
-<div class="container">
+<div class="header__top">
+	<div class="container">
+		<div class="logo ir">
+			<a href="/" class="logo__link">BCT</a>
+		</div>
+	
+		<nav class="head-nav">
+			<ul class="head-menu">
+				<li class="head-menu__item"><a class="head-menu__link" href="#" onclick="goto('terminal');return false;">Terminal</a></li>
+				<li class="head-menu__item"><a class="head-menu__link" href="#" onclick="goto('menu1');return false;">Menu item 1</a></li>
+				<li class="head-menu__item"><a class="head-menu__link" href="#" onclick="goto('bag');return false;" >Menu item 2</a></li>
+				<li class="head-menu__item"><a class="head-menu__link" href="#">Support</a></li>
+				<li class="head-menu__item">
+					<a class="head-menu__link" href="#">
+						<svg class="head-menu__icon search" role="img" aria-hidden="true">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#search"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="head-menu__item">
+					<a class="head-menu__link" href="#">
+						<svg class="head-menu__icon lock" role="img" aria-hidden="true">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#lock"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
 
-    <div class="logo ir">
-        <a href="/" class="logo__link">BCT</a>
-    </div>
+<div class="header__bottom">
+	<div class="container">
+		<img src="img/logo-terminal.svg" width="165" height="28">
 
-    <nav class="head-nav">
-        <ul class="head-menu">
-            <li class="head-menu__item"><a class="head-menu__link" href="#" onclick="goto('terminal');return false;">Terminal</a></li>
-            <li class="head-menu__item"><a class="head-menu__link" href="#" onclick="goto('menu1');return false;">Menu item 1</a></li>
-            <li class="head-menu__item"><a class="head-menu__link" href="#" onclick="goto('bag');return false;" >Menu item 2</a></li>
-            <li class="head-menu__item"><a class="head-menu__link" href="#">Support</a></li>
-            <li class="head-menu__item">
-                <a class="head-menu__link" href="#">
-                    <svg class="head-menu__icon search" role="img" aria-hidden="true">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#search"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="head-menu__item">
-                <a class="head-menu__link" href="#">
-                    <svg class="head-menu__icon lock" role="img" aria-hidden="true">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#lock"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </nav>
+		<ul class="terminal-menu">
+			<li class="terminal-menu__item">
+				<a class="terminal-menu__link" href="#">Display</a>
+			</li>
 
+			<li class="terminal-menu__item">
+				<a class="terminal-menu__link" href="#">Only Terminal</a>
+			</li>
+
+			<li class="terminal-menu__item">
+				<a class="terminal-menu__link" href="#">Tech Specs</a>
+			</li>
+
+			<li class="terminal-menu__item">
+				<a class="basic-btn" href="#">Buy</a>
+			</li>
+		</ul>
+	</div>
 </div>

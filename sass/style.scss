@@ -27,8 +27,8 @@ body {
 }
 
 a {
-	color: #0680ba;
-	transition: all linear .2s;
+	color: #66b9ff;
+	transition: all linear .1s;
 	text-decoration: none;
 
 	&:hover{
@@ -65,7 +65,7 @@ a {
 }
 
 .container {
-	max-width: 1060px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0 15px;
 }

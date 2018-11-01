@@ -6,22 +6,40 @@
 	left: 0;
 	top: 0;
 	right: 0;
-	background: #1e1e1e;
+	transform: translateY(0);
+	transition: all 0.3s;
+	z-index: 10;
+
+	&__top{
+		background: #1e1e1e;
+	}
+
+	&__bottom{
+		height: 65px;
+		border-bottom: 1px solid #1B1B1B;
+		padding: 0;
+	}
 
 	.container{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		height: 45px;
+		height: 100%;
 		margin: 0 auto;
-		padding: 0;
+		padding: 0 15px;
+		max-width: 1060px;
+	}
+
+	&.sticky{
+		transform: translateY(-45px);
+		background: rgba(0, 0, 0, 0.75);
 	}
 }
 
 .logo {
 	height: 20px;
 	width: 95px;
-	margin: 0 0 0 15px;
+	margin: 0 0 0 0;
 	
 	&__link {
 		display: block;
@@ -32,7 +50,7 @@
 }
 
 .head-nav{
-	
+	margin: 0 -15px 0;
 }
 
 .head-menu{
@@ -57,7 +75,14 @@
 		padding: 0 15px;
 		height: 45px;
 		display: flex;
+		opacity: 1;
+		transition: all 0.1s;
 		align-items: center;
+
+		&:hover{
+			opacity: 0.66;
+			text-decoration: none;
+		}
 	}
 	
 	&__icon{
@@ -71,6 +96,42 @@
 		&.lock{
 			width: 14px;
 			height: 17px;
+		}
+	}
+}
+
+.terminal-menu{
+	display: flex;
+	font-size: 12px;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+
+	&__item{
+		margin: 0 0 0 25px;
+	}
+
+	&__link{
+		color: #fff;
+		padding: 10px;
+
+		&:hover{
+			color: #66b9ff;
+			text-decoration: none;
+		}
+	}
+
+	.basic-btn{
+		border-radius: 4px;
+		padding: 0 10px;
+		color: #fff;
+		height: 24px;
+		border: 1px solid #0570b8;
+		background: linear-gradient(to bottom, #4e9ad4 0%,#2c70b8 100%);
+
+		&:hover{
+			text-decoration: none;
+			background: linear-gradient(to bottom, #4e9ad4 0%,#2c70b8 100%);
 		}
 	}
 }

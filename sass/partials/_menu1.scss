@@ -8,56 +8,98 @@
     background-color: var(--clr-Wback);
     
     &__question {
-        height: 40px;
+        height: 44px;
         width: 100%;
+        padding-top: 15px;
+        font-size: 12px;
         a {
             color: #38f;
             display: inline;
         }
     }
     &__mode {
-        height: 50px;
+        height: 52px;
         width: 100%;
+        ul {
+            display: flex;
+            list-style-type:none;
+            padding: 0;
+            justify-content: center;
+        }
+        &__item {
+            margin: 0 30px 0 0;
+            align-items: center;
+        }
+        &__link {
+            display: block;
+            padding: 0 15px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            color: var(--clr-Btext);
+        }
     }
     &__title {
-        font-size: 28px;
+        font-size: 40px;
         font-weight: 600;
     }
     .selections {
+        width: 100%;
         &__item {
+            display: flex;
+            padding: 5px 28% 70px;
             &__info {
-                display: inline-block;
-                width: 30%;
                 text-align: left;
-                margin-left: 20px;
+                margin-left: 33px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding-bottom: 33px;
+                p {
+                    margin: 0;
+                }
                 .info {
                     &__new {
-                        font-size: 14px;
+                        font-size: 18px;
                         color: red;
                     }
                     &__title {
-                        font-size: 18px;
+                        font-size: 23px;
                     }
                     &__size {
-                        font-size: 16px;
+                        font-size: 18px;
                     }
                     &__desc {
-                        font-size: 12px;
+                        font-size: 15px;
+                        margin-top: 23px;
                     }
                 }
 
                 button {
-                    width: 60px;
-                    height: 30px;
+                    width: 90px;
+                    height: 39px;
                     color: var(--clr-Wtext);
-                    background-color: gray;
+                    background-color: #3194E1;
+                    font-size: 19px;
+                    margin-top: 21px;
+                    border-width: 0px;
+                    border-radius: 5px;
                     &:hover {
-                        background-color: #38f;
+                        background-color: #3194E1;
                     }
                 }
             }
-            &__img {
-                width: 250px;
+            &__imgwrapper {
+                width: fit-content;
+                &__img {
+                    width: 349px;
+                }
+            }
+            
+            &:last-child {                
+                &__info {
+                    padding-bottom: 48px;
+                }
             }
         }
     }
