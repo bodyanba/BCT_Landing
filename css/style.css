@@ -9,11 +9,6 @@ $_________:					'________', Arial, Helvetica, sans-serif;
  * If you have already included it, you can eliminate the below
  * https://github.com/sass-mq/sass-mq/blob/master/_mq.scss
  */
-.dummy:after {
-  display: inline-block;
-  background-image: url("../img/sprite.svg");
-  background-size: 2.5em 2.5em; }
-
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -427,19 +422,21 @@ body {
   height: 100%; }
 
 html {
-  /*font-family: $font-base;*/ }
+  font-family: "SF Pro Text", Arial, Helvetica, sans-serif; }
 
 body {
   width: 100%;
   background: #fff;
   color: #515151;
-  /*font-family: $font-base;*/
-  /*font-size: $font-size;*/
+  font-size: 14px;
   line-height: 1.36; }
 
 a {
   color: #0680ba;
-  transition: all linear .2s; }
+  transition: all linear .2s;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
 .clearfix:after {
   clear: both;
@@ -476,7 +473,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  /*font-family: $font-base;*/ }
+  font-family: "SF Pro Text Semibold", Arial, Helvetica, sans-serif; }
 
 /* Fonts
 -----------------------------------------------------------------------------*/
@@ -492,6 +489,24 @@ h6 {
     font-style: normal;
 }
 */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url("../fonts/subset-SFProText-Regular.woff2") format("woff2"), url("../fonts/subset-SFProText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF Pro Text Semibold';
+  src: url("../fonts/subset-SFProText-Semibold.woff2") format("woff2"), url("../fonts/subset-SFProText-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/subset-SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/subset-SFProDisplay-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
 /* Icons
 -----------------------------------------------------------------------------*/
 /* Buttons
@@ -521,16 +536,32 @@ h6 {
     background: url(../img/logo.svg) no-repeat;
     transition: none; }
 
+.head-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex; }
+  .head-menu__item {
+    margin: 0 74px 0 0;
+    display: flex;
+    align-items: center; }
+    .head-menu__item:last-child {
+      margin: 0; }
+  .head-menu__link {
+    color: #fff;
+    display: block;
+    padding: 2px; }
+  .head-menu__icon {
+    fill: #fff; }
+    .head-menu__icon.search {
+      width: 15px;
+      height: 15px; }
+    .head-menu__icon.lock {
+      width: 14px;
+      height: 17px; }
+
 /* Content
 -----------------------------------------------------------------------------*/
-.dummy {
-  display: inline-block; }
-  .dummy:after {
-    content: '';
-    width: 2.5em;
-    height: 2.5em;
-    background-position: 0em 0em; }
-
 /* Footer
 -----------------------------------------------------------------------------*/
 /* Media

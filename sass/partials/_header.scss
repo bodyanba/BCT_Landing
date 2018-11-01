@@ -27,3 +27,44 @@
 		transition: none;
 	}
 }
+
+.head-nav{
+
+}
+
+.head-menu{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	
+	&__item{
+		margin: 0 74px 0 0;
+		display: flex;
+		align-items: center;
+
+		&:last-child{
+			margin: 0;
+		};
+	}
+	
+	&__link{
+		color: #fff;
+		display: block;
+		padding: 2px;
+	}
+	
+	&__icon{
+		fill: #fff;
+
+		&.search{
+			width: 15px;
+			height: 15px;
+		}
+		
+		&.lock{
+			width: 14px;
+			height: 17px;
+		}
+	}
+}

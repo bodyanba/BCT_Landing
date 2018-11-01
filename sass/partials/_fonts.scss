@@ -12,3 +12,27 @@
     font-style: normal;
 }
 */
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../fonts/subset-SFProText-Regular.woff2') format('woff2'),
+         url('../fonts/subset-SFProText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Semibold';
+    src: url('../fonts/subset-SFProText-Semibold.woff2') format('woff2'),
+    	 url('../fonts/subset-SFProText-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/subset-SFProDisplay-Semibold.woff2') format('woff2'),
+         url('../fonts/subset-SFProDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}

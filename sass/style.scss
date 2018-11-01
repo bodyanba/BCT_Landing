@@ -15,21 +15,25 @@ body {
 }
 
 html {
-	/*font-family: $font-base;*/
+	font-family: $sfpText;
 }
 
 body {
 	width: 100%;
 	background: #fff;
 	color: #515151;
-	/*font-family: $font-base;*/
-	/*font-size: $font-size;*/
+	font-size: 14px;
 	line-height: 1.36;
 }
 
 a {
 	color: #0680ba;
 	transition: all linear .2s;
+	text-decoration: none;
+
+	&:hover{
+		text-decoration: underline;
+	}
 }
 
 .clearfix:after {
@@ -70,7 +74,7 @@ h4,
 h5,
 h6 {
 	font-weight: normal;
-	/*font-family: $font-base;*/
+	font-family: $sfpTextSB;
 }
 
 
