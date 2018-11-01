@@ -1,12 +1,66 @@
 .models {
 	min-height: 100vh;
 	align-items: center;
-	justify-content: center;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
     color: var(--clr-Btext);
     background-color: var(--clr-Wback);
+    
+    &__question {
+        height: 40px;
+        width: 100%;
+        a {
+            color: #38f;
+            display: inline;
+        }
+    }
+    &__mode {
+        height: 50px;
+        width: 100%;
+    }
+    &__title {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .selections {
+        &__item {
+            &__info {
+                display: inline-block;
+                width: 30%;
+                text-align: left;
+                margin-left: 20px;
+                .info {
+                    &__new {
+                        font-size: 14px;
+                        color: red;
+                    }
+                    &__title {
+                        font-size: 18px;
+                    }
+                    &__size {
+                        font-size: 16px;
+                    }
+                    &__desc {
+                        font-size: 12px;
+                    }
+                }
+
+                button {
+                    width: 60px;
+                    height: 30px;
+                    color: var(--clr-Wtext);
+                    background-color: gray;
+                    &:hover {
+                        background-color: #38f;
+                    }
+                }
+            }
+            &__img {
+                width: 250px;
+            }
+        }
+    }
 }
 .carousel {
 	min-height: 60vh;
