@@ -438,7 +438,7 @@ body {
   line-height: 1.26; }
 
 a {
-  color: #0680ba;
+  color: #66b9ff;
   transition: all linear .1s;
   text-decoration: none; }
   a:hover {
@@ -754,11 +754,16 @@ h6 {
   width: 100%;
   height: auto; }
 
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+  padding: 10px 0 30px; }
+
 .com-features {
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
-  margin: 70px auto 55px; }
+  margin: 60px auto 55px; }
   .com-features__item {
     width: 220px;
     padding: 5px 5px;
@@ -796,7 +801,7 @@ h6 {
     font-size: 14px;
     color: #66b9ff; }
 
-.rights-tips {
+.f-tips {
   font-size: 11px;
   border-top: 1px solid #5F5F5F;
   border-bottom: 1px solid #5F5F5F;
@@ -805,12 +810,47 @@ h6 {
   width: 100%;
   max-width: 1030px;
   line-height: 1.32; }
-  .rights-tips__item {
+  .f-tips__item {
     margin: 0;
     padding: 0; }
 
-/* Footer
------------------------------------------------------------------------------*/
+.f-shop {
+  font-size: 11px;
+  padding: 18px 0 11px; }
+  .f-shop a {
+    color: #71B3E2; }
+    .f-shop a:hover {
+      color: #66b9ff; }
+
+.f-bottom {
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid #5f5f5f; }
+
+.f-links {
+  display: flex; }
+  .f-links__item {
+    position: relative;
+    margin: 0;
+    color: #959595;
+    padding: 0 10px 0 11px; }
+    .f-links__item:last-child {
+      margin: 0; }
+    .f-links__item:first-child:after {
+      display: none; }
+    .f-links__item:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: #5f5f5f; }
+    .f-links__item:hover {
+      color: #fff; }
+
 /* Media
 -----------------------------------------------------------------------------*/
 /*==========  Non-Mobile First Method  ==========*/
