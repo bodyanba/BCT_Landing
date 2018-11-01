@@ -31,5 +31,5 @@ function init() {
 }
 
 function goto(page) {
-	$(".content").load("components" + page); 
+	$(".content").load("components/" + page + ".html"); 
 }

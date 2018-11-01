@@ -618,12 +618,46 @@ h6 {
 .models {
   min-height: 100vh;
   align-items: center;
-  justify-content: center;
   text-align: center;
   display: flex;
   flex-direction: column;
   color: var(--clr-Btext);
   background-color: var(--clr-Wback); }
+  .models__question {
+    height: 40px;
+    width: 100%; }
+    .models__question a {
+      color: #38f;
+      display: inline; }
+  .models__mode {
+    height: 50px;
+    width: 100%; }
+  .models__title {
+    font-size: 28px;
+    font-weight: 600; }
+  .models .selections__item__info {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    margin-left: 20px; }
+    .models .selections__item__info .info__new {
+      font-size: 14px;
+      color: red; }
+    .models .selections__item__info .info__title {
+      font-size: 18px; }
+    .models .selections__item__info .info__size {
+      font-size: 16px; }
+    .models .selections__item__info .info__desc {
+      font-size: 12px; }
+    .models .selections__item__info button {
+      width: 60px;
+      height: 30px;
+      color: var(--clr-Wtext);
+      background-color: gray; }
+      .models .selections__item__info button:hover {
+        background-color: #38f; }
+  .models .selections__item__img {
+    width: 250px; }
 
 .carousel {
   min-height: 60vh;
