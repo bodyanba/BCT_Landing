@@ -640,10 +640,15 @@ h6 {
     .intro__more a {
       margin: 0 30px;
       color: #F4DED1; }
+      .intro__more a:hover {
+        color: #66b9ff; }
+        .intro__more a:hover .sprite-icon {
+          fill: #66b9ff; }
     .intro__more .sprite-icon {
       position: relative;
       fill: #F4DED1;
-      margin: 0 0 0 5px; }
+      margin: 0 0 0 5px;
+      transition: all 0.1s; }
       .intro__more .sprite-icon.video {
         top: 5px;
         width: 26px;
@@ -658,9 +663,9 @@ h6 {
   display: block;
   margin: 0 auto; }
   .promo__link:hover .promo__more {
-    color: #0570b8; }
+    color: #66b9ff; }
     .promo__link:hover .promo__more .sprite-icon {
-      fill: #0570b8; }
+      fill: #66b9ff; }
 
 .promo__img {
   display: block;
@@ -708,7 +713,9 @@ h6 {
     cursor: pointer;
     color: #F4DED1; }
     .slogan__btn:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #66b9ff;
+      border-color: #66b9ff; }
 
 .monitor-features {
   position: relative;

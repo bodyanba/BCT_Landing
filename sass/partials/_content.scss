@@ -46,12 +46,21 @@
 		a{
 			margin: 0 30px;
 			color: #F4DED1;
+
+			&:hover{
+				color: #66b9ff;
+
+				.sprite-icon{
+					fill: #66b9ff;
+				}
+			}
 		}
 
 		.sprite-icon{
 			position: relative;
 			fill: #F4DED1;
 			margin: 0 0 0 5px;
+			transition: all 0.1s;
 
 			&.video{
 				top: 5px;
@@ -77,10 +86,10 @@
 
 		&:hover{
 			.promo__more{
-				color: #0570b8;
+				color: #66b9ff;
 
 				.sprite-icon{
-					fill: #0570b8;
+					fill: #66b9ff;
 				}
 			}
 		}
@@ -146,6 +155,8 @@
 
 		&:hover{
 			text-decoration: none;
+			color: #66b9ff;
+			border-color: #66b9ff;
 		}
 	}
 }
