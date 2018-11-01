@@ -1,0 +1,15 @@
+/* Content
+-----------------------------------------------------------------------------*/
+
+.content {
+	
+}
+
+.dummy{
+	display: inline-block;
+	
+	&:after{
+		content: '';
+		@include sprite(dummy);
+	};
+}

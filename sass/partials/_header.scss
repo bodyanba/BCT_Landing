@@ -1,0 +1,29 @@
+/* Header
+-----------------------------------------------------------------------------*/
+
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	background: #1e1e1e;
+
+	.container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 45px;
+	}
+}
+
+.logo {
+	height: 20px;
+	width: 95px;
+	
+	&__link {
+		display: block;
+		height: 100%;
+		background: url(../img/logo.svg) no-repeat;
+		transition: none;
+	}
+}
