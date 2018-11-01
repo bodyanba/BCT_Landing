@@ -611,7 +611,7 @@ h6 {
 -----------------------------------------------------------------------------*/
 .content {
   padding: 45px 0 0; }
-  .content section {
+  .content > section {
     width: 100%; }
 
 .section {
@@ -819,7 +819,8 @@ h6 {
   display: flex;
   flex-direction: column;
   color: var(--clr-Btext);
-  background-color: var(--clr-Wback); }
+  background-color: var(--clr-Wback);
+  margin-top: 65px; }
   .models__question {
     height: 44px;
     width: 100%;
@@ -894,7 +895,36 @@ h6 {
 .carousel {
   min-height: 60vh;
   color: var(--clr-Wtext);
-  background-color: var(--clr-Bback); }
+  background-color: var(--clr-Bback);
+  display: block; }
+  .carousel .slider {
+    width: 50%;
+    margin: 100px auto; }
+  .carousel .slick-slide {
+    margin: 0px 20px; }
+  .carousel .slick-prev:before,
+  .carousel .slick-next:before {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 28px; }
+  .carousel .slick-slide {
+    transition: all ease-in-out .3s; }
+  .carousel .slick-dots li.slick-active button:before {
+    color: var(--clr-Wback) !important;
+    opacity: 1; }
+  .carousel .slick-dots li button:before {
+    color: var(--clr-Wback) !important;
+    opacity: .5; }
+  .carousel .slick-dotted.slick-slider {
+    margin-bottom: 80px !important; }
+  .carousel__content {
+    width: 40%;
+    margin: 50px auto; }
+    .carousel__content__item {
+      display: flex !important;
+      justify-content: center; }
+      .carousel__content__item img {
+        width: 650px;
+        height: 650px; }
 
 .components {
   min-height: 50vh;

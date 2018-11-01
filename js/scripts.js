@@ -35,6 +35,26 @@ function init() {
 	$(".content").load("components/terminal.html");
 }
 
+
+function formatContent() {
+	console.log($(".regular"))
+	// $('.carousel__content').slick({
+    //     dots: true,
+    //     vertical: true,
+    //     centerMode: true,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 2
+	// });
+	setTimeout(() => {
+		$(".carousel__content").slick(
+			{
+				dots: true
+			}
+		);	
+	}, 500);
+}
+
 function goto(page) {
 	$(".content").load("components/" + page + ".html"); 
+	formatContent();
 }
