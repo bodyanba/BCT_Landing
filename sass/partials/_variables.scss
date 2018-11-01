@@ -13,7 +13,11 @@ $_________:					'________', Arial, Helvetica, sans-serif;
 
 
 /*----- COLORS -----*/
-
-$clr-text:			#000000;
+:root {
+    --clr-Btext:			#000000;
+    --clr-Wtext:			#FFFFFF;
+    --clr-Bback:			#000000;
+    --clr-Wback:			#FFFFFF;
+}
 
 // end COLORS

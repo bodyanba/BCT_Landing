@@ -1,0 +1,33 @@
+.models {
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+    color: var(--clr-Btext);
+    background-color: var(--clr-Wback);
+}
+.carousel {
+	min-height: 60vh;
+    color: var(--clr-Wtext);
+    background-color: var(--clr-Bback);
+}
+
+.components {
+	min-height: 50vh;
+    color: var(--clr-Btext);
+    background-color: var(--clr-Wback);
+}
+
+.movies {
+	min-height: 80vh;
+    color: var(--clr-Wtext);
+    background-color: var(--clr-Bback);
+}
+
+.fre-questions {
+	min-height: 130vh;
+    color: var(--clr-Btext);
+    background-color: var(--clr-Wback);
+}
