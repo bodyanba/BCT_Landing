@@ -9,7 +9,8 @@
         display: flex;
         align-items: flex-start;
         border-bottom: 1px solid #D6D6D6;
-        margin: 40px 0px;
+        margin: 75px 0 37px;
+        padding-bottom: 27px;
 
         &__info{
             width: 100%;
@@ -23,16 +24,23 @@
                 justify-content: space-between;
                 width: 100%;
 
+                h2{
+                    font-size: 24px;
+                    letter-spacing: -0.8px;
+                }
                 h2:first-child{
-                    width: 50%;
+                    width: 55%;
+                }
+                h2:nth-child(2){
+                    width: 20%;
                 }
             }
             &__options,
             &__delivery {
                 display: flex;
                 justify-content: space-between;
-                margin: 10px 0px;
-                padding: 10px 0px;
+                margin: 25px 0px;
+                padding: 22px 0px;
                 border-top: 1px solid #D6D6D6;
                 border-bottom: 1px solid #D6D6D6;
                 width: 100%;
@@ -40,31 +48,52 @@
                 &__text{
                     width: 100%;
                     margin-left: 10px;
+                    h3{
+                        font-size: 17px;
+                        letter-spacing: -0.2px;
+                         margin-bottom: 22px;
+                    }
+                    p.small{
+                        margin-bottom: 4px;
+                    }
                 }
             }
             &__delivery{
                 border: 0;
                 margin: 0;
                 padding: 0;
+                > div {
+                    h4 {
+                        letter-spacing: -0.2px;
+                        margin-bottom: 3px;
+                    }
+
+                    p.small {
+                        margin: 1px 0px;
+                    }
+                }
             }
         }
     }
 
     &__form{
-        width: calc(100% - 255px);
-        margin-left: 255px;
-        
+        width: calc(100% - 250px);
+        margin-left: 247px;
 
         &__subtotal{
             border-bottom: 1px solid #D6D6D6;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
+            padding-bottom: 18px;
 
             & > div{
                 display: flex;
                 justify-content: space-between;
-
+                margin-bottom: 1px;
                 p {
                     margin: 5px 0px;
+                }
+                p:nth-child(2){
+                    font-weight: 600;
                 }
             }
         }
@@ -75,11 +104,19 @@
             & > div {
                 text-align: right;
             }
+            h2{
+                font-size: 24px;
+                letter-spacing: -1px;
+                margin-bottom: 0px;            
+            }
+            p.small{
+                margin-top: 8px;
+            }
         }
         &__btn{
             width: 362px;
             margin-left: calc(100% - 362px);
-            margin-top: 20px;
+            margin-top: 23px;
             height: 54px;
             background: linear-gradient(#42A1EC, #0170C9);
             border: 1px solid #0077CC;
@@ -92,10 +129,30 @@
         }
     }
 
+    .container{
+        padding: 22px 0px;
+    }
+
     h1 {
         font-size: 40px;
         margin-bottom: 0px;
+        letter-spacing: -2px;
     }
+
+    p{
+        font-size: 17px;
+        letter-spacing: -0.4px;
+        margin-top: 15px;
+    }
+    .small{
+        font-size: 14px;
+        letter-spacing: -0.15px;
+    }
+    a{
+        font-size: 17px;
+        color: #0070C9;
+    }
+
     h2,h3,h4{
         margin-top: 0px;
     }
@@ -104,8 +161,28 @@
         width: 17px;
         height: 17px;
     }
+    .bag-icon-small,
+    a .arrow-down {
+        width: 10px;
+        height: 10px;
+    }
 
     .remove-link{
-        margin-top: -20px;
+        margin-top: -37px;
+    }
+
+    .arrow-down{
+        transform: rotate(90deg);
+    }
+    a .arrow-down{
+        fill: #0070C9;
+    }
+
+    .question-icon{
+        margin-left: -22px;
+        fill: #888888;
+        position: relative;
+        top: 5px;
+        left: -5px;
     }
 }

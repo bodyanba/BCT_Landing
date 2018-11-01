@@ -998,7 +998,8 @@ h6 {
     display: flex;
     align-items: flex-start;
     border-bottom: 1px solid #D6D6D6;
-    margin: 40px 0px; }
+    margin: 75px 0 37px;
+    padding-bottom: 27px; }
     .bag__items__info {
       width: 100%;
       margin-left: 20px;
@@ -1009,43 +1010,69 @@ h6 {
         display: flex;
         justify-content: space-between;
         width: 100%; }
+        .bag__items__info__title h2 {
+          font-size: 24px;
+          letter-spacing: -0.8px; }
         .bag__items__info__title h2:first-child {
-          width: 50%; }
+          width: 55%; }
+        .bag__items__info__title h2:nth-child(2) {
+          width: 20%; }
       .bag__items__info__options, .bag__items__info__delivery {
         display: flex;
         justify-content: space-between;
-        margin: 10px 0px;
-        padding: 10px 0px;
+        margin: 25px 0px;
+        padding: 22px 0px;
         border-top: 1px solid #D6D6D6;
         border-bottom: 1px solid #D6D6D6;
         width: 100%; }
         .bag__items__info__options__text, .bag__items__info__delivery__text {
           width: 100%;
           margin-left: 10px; }
+          .bag__items__info__options__text h3, .bag__items__info__delivery__text h3 {
+            font-size: 17px;
+            letter-spacing: -0.2px;
+            margin-bottom: 22px; }
+          .bag__items__info__options__text p.small, .bag__items__info__delivery__text p.small {
+            margin-bottom: 4px; }
       .bag__items__info__delivery {
         border: 0;
         margin: 0;
         padding: 0; }
+        .bag__items__info__delivery > div h4 {
+          letter-spacing: -0.2px;
+          margin-bottom: 3px; }
+        .bag__items__info__delivery > div p.small {
+          margin: 1px 0px; }
   .bag__form {
-    width: calc(100% - 255px);
-    margin-left: 255px; }
+    width: calc(100% - 250px);
+    margin-left: 247px; }
     .bag__form__subtotal {
       border-bottom: 1px solid #D6D6D6;
-      margin-bottom: 20px; }
+      margin-bottom: 16px;
+      padding-bottom: 18px; }
       .bag__form__subtotal > div {
         display: flex;
-        justify-content: space-between; }
+        justify-content: space-between;
+        margin-bottom: 1px; }
         .bag__form__subtotal > div p {
           margin: 5px 0px; }
+        .bag__form__subtotal > div p:nth-child(2) {
+          font-weight: 600; }
     .bag__form__total {
       display: flex;
       justify-content: space-between; }
       .bag__form__total > div {
         text-align: right; }
+      .bag__form__total h2 {
+        font-size: 24px;
+        letter-spacing: -1px;
+        margin-bottom: 0px; }
+      .bag__form__total p.small {
+        margin-top: 8px; }
     .bag__form__btn {
       width: 362px;
       margin-left: calc(100% - 362px);
-      margin-top: 20px;
+      margin-top: 23px;
       height: 54px;
       background: linear-gradient(#42A1EC, #0170C9);
       border: 1px solid #0077CC;
@@ -1055,13 +1082,40 @@ h6 {
       border-radius: 5px;
       font-size: 17px;
       cursor: pointer; }
+  .bag .container {
+    padding: 22px 0px; }
   .bag h1 {
     font-size: 40px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    letter-spacing: -2px; }
+  .bag p {
+    font-size: 17px;
+    letter-spacing: -0.4px;
+    margin-top: 15px; }
+  .bag .small {
+    font-size: 14px;
+    letter-spacing: -0.15px; }
+  .bag a {
+    font-size: 17px;
+    color: #0070C9; }
   .bag h2, .bag h3, .bag h4 {
     margin-top: 0px; }
   .bag .bag-icon {
     width: 17px;
     height: 17px; }
+  .bag .bag-icon-small,
+  .bag a .arrow-down {
+    width: 10px;
+    height: 10px; }
   .bag .remove-link {
-    margin-top: -20px; }
+    margin-top: -37px; }
+  .bag .arrow-down {
+    transform: rotate(90deg); }
+  .bag a .arrow-down {
+    fill: #0070C9; }
+  .bag .question-icon {
+    margin-left: -22px;
+    fill: #888888;
+    position: relative;
+    top: 5px;
+    left: -5px; }
