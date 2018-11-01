@@ -99,11 +99,13 @@
 		transform: translate(-50%, 220%);
 		font-size: 24px;
 		transition: all 0.1s;
+		color: #fff;
 
 		.sprite-icon{
 			position: relative;
 			fill: #fff;
 			margin: 0 0 0 5px;
+			transition: all 0.1s;
 
 			&.video{
 				top: 5px;

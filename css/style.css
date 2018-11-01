@@ -673,11 +673,13 @@ h6 {
   left: 50%;
   transform: translate(-50%, 220%);
   font-size: 24px;
-  transition: all 0.1s; }
+  transition: all 0.1s;
+  color: #fff; }
   .promo__more .sprite-icon {
     position: relative;
     fill: #fff;
-    margin: 0 0 0 5px; }
+    margin: 0 0 0 5px;
+    transition: all 0.1s; }
     .promo__more .sprite-icon.video {
       top: 5px;
       width: 26px;
