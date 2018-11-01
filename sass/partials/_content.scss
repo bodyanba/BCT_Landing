@@ -19,7 +19,7 @@
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	margin: 45px 0 0;
+	margin: 32px 0 0;
 
 	&__img{
 		
@@ -29,14 +29,16 @@
 		max-width: 600px;
 		font-size: 80px;
 		font-family: $sfpDisplaySB;
-		margin: 16px auto 40px;
+		margin: 12px auto 40px;
+		line-height: 1.22;
 	}
 
 	&__desc{
 		max-width: 740px;
 		font-size: 32px;
 		font-family: $sfpDisplaySB;
-		margin: 0 auto 63px;
+		margin: 0 auto 61px;
+		line-height: 1.2;
 	}
 
 	&__more{
@@ -80,7 +82,7 @@
 
 	&__link{
 		position: relative;
-		max-width: 1036px;
+		max-width: 990px;
 		display: block;
 		margin: 0 auto;
 
@@ -105,7 +107,7 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, 220%);
+		transform: translate(-50%, 210%);
 		font-size: 24px;
 		transition: all 0.1s;
 		color: #fff;
@@ -132,13 +134,13 @@
 
 .slogan{
 	font-family: $sfpDisplaySB;
-	margin: 114px 0 160px;
+	margin: 112px 0 162px;
 	padding: 0;
 
 	&__desc{
 		font-size: 80px;
 		margin: 0 0 30px;
-		line-height: 1.268;
+		line-height: 1.22;
 	}
 
 	&__btn{
@@ -148,7 +150,7 @@
 		width: 160px;
 		border-radius: 28px;
 		font-size: 18px;
-		height: 56px;
+		height: 54px;
 		border: 2px solid #F4DED1;
 		cursor: pointer;
 		color: #F4DED1;
@@ -163,7 +165,7 @@
 
 .monitor-features{
 	position: relative;
-	margin: 286px 0 100px;
+	margin: 270px 0 156px;
 	padding: 40px 0 60px;
 	background: linear-gradient(to bottom, #000000 0%,#111111 100%);
 
@@ -178,25 +180,26 @@
 		width: 330px;
 		padding: 15px;
 		position: absolute;
+		line-height: 1.22;
 
 		span{
 			color: #fff;
 		}
 
 		&:nth-child(1){
-			left: 0;
-			top: 30px;
+			left: 15px;
+			top: 28px;
 		}
 
 		&:nth-child(2){
 			left: auto;
 			right: 0;
-			top: 368px;
+			top: 353px;
 		}
 
 		&:nth-child(3){
-			left: 0;
-			top: 696px;
+			left: 15px;
+			top: 668px;
 		}
 	}
 

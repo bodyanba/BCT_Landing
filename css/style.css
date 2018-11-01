@@ -623,17 +623,19 @@ h6 {
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin: 45px 0 0; }
+  margin: 32px 0 0; }
   .intro__title {
     max-width: 600px;
     font-size: 80px;
     font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
-    margin: 16px auto 40px; }
+    margin: 12px auto 40px;
+    line-height: 1.22; }
   .intro__desc {
     max-width: 740px;
     font-size: 32px;
     font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
-    margin: 0 auto 63px; }
+    margin: 0 auto 61px;
+    line-height: 1.2; }
   .intro__more {
     font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
     font-size: 24px; }
@@ -659,7 +661,7 @@ h6 {
 
 .promo__link {
   position: relative;
-  max-width: 1036px;
+  max-width: 990px;
   display: block;
   margin: 0 auto; }
   .promo__link:hover .promo__more {
@@ -676,7 +678,7 @@ h6 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 220%);
+  transform: translate(-50%, 210%);
   font-size: 24px;
   transition: all 0.1s;
   color: #fff; }
@@ -695,12 +697,12 @@ h6 {
 
 .slogan {
   font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
-  margin: 114px 0 160px;
+  margin: 112px 0 162px;
   padding: 0; }
   .slogan__desc {
     font-size: 80px;
     margin: 0 0 30px;
-    line-height: 1.268; }
+    line-height: 1.22; }
   .slogan__btn {
     display: flex;
     align-items: center;
@@ -708,7 +710,7 @@ h6 {
     width: 160px;
     border-radius: 28px;
     font-size: 18px;
-    height: 56px;
+    height: 54px;
     border: 2px solid #F4DED1;
     cursor: pointer;
     color: #F4DED1; }
@@ -719,7 +721,7 @@ h6 {
 
 .monitor-features {
   position: relative;
-  margin: 286px 0 100px;
+  margin: 270px 0 156px;
   padding: 40px 0 60px;
   background: linear-gradient(to bottom, #000000 0%, #111111 100%); }
   .monitor-features__img {
@@ -730,19 +732,20 @@ h6 {
     font-size: 21px;
     width: 330px;
     padding: 15px;
-    position: absolute; }
+    position: absolute;
+    line-height: 1.22; }
     .monitor-features__item span {
       color: #fff; }
     .monitor-features__item:nth-child(1) {
-      left: 0;
-      top: 30px; }
+      left: 15px;
+      top: 28px; }
     .monitor-features__item:nth-child(2) {
       left: auto;
       right: 0;
-      top: 368px; }
+      top: 353px; }
     .monitor-features__item:nth-child(3) {
-      left: 0;
-      top: 696px; }
+      left: 15px;
+      top: 668px; }
   .monitor-features .container {
     position: relative;
     width: 100%;
@@ -763,7 +766,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
-  margin: 60px auto 55px; }
+  margin: 60px auto 50px; }
   .com-features__item {
     width: 220px;
     padding: 5px 5px;
@@ -774,7 +777,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 16px; }
+    margin: 0 auto 10px; }
   .com-features__icon {
     fill: #959595; }
     .com-features__icon.delivery {
@@ -791,12 +794,13 @@ h6 {
       height: 44px; }
   .com-features__title {
     font-size: 19px;
-    margin: 10px 0 10px; }
+    margin: 10px 0 10px;
+    color: #CACAC9; }
   .com-features__desc {
     font-size: 14px;
     color: #CACAC9;
     margin: 10px 0 12px;
-    line-height: 1.5; }
+    line-height: 1.46; }
   .com-features__more {
     font-size: 14px;
     color: #66b9ff; }
@@ -816,7 +820,7 @@ h6 {
 
 .f-shop {
   font-size: 11px;
-  padding: 18px 0 11px; }
+  padding: 17px 0 10px; }
   .f-shop a {
     color: #71B3E2; }
     .f-shop a:hover {
