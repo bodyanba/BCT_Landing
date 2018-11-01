@@ -678,3 +678,81 @@ h6 {
   min-height: 130vh;
   color: var(--clr-Btext);
   background-color: var(--clr-Wback); }
+
+.bag {
+  min-height: 100vh;
+  color: var(--clr-Btext);
+  background-color: var(--clr-Wback);
+  padding-top: 1px;
+  padding-bottom: 50px; }
+  .bag__items {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #D6D6D6;
+    margin: 40px 0px; }
+    .bag__items__info {
+      width: 100%;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+      .bag__items__info__title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; }
+        .bag__items__info__title h2:first-child {
+          width: 50%; }
+      .bag__items__info__options, .bag__items__info__delivery {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0px;
+        padding: 10px 0px;
+        border-top: 1px solid #D6D6D6;
+        border-bottom: 1px solid #D6D6D6;
+        width: 100%; }
+        .bag__items__info__options__text, .bag__items__info__delivery__text {
+          width: 100%;
+          margin-left: 10px; }
+      .bag__items__info__delivery {
+        border: 0;
+        margin: 0;
+        padding: 0; }
+  .bag__form {
+    width: calc(100% - 255px);
+    margin-left: 255px; }
+    .bag__form__subtotal {
+      border-bottom: 1px solid #D6D6D6;
+      margin-bottom: 20px; }
+      .bag__form__subtotal > div {
+        display: flex;
+        justify-content: space-between; }
+        .bag__form__subtotal > div p {
+          margin: 5px 0px; }
+    .bag__form__total {
+      display: flex;
+      justify-content: space-between; }
+      .bag__form__total > div {
+        text-align: right; }
+    .bag__form__btn {
+      width: 362px;
+      margin-left: calc(100% - 362px);
+      margin-top: 20px;
+      height: 54px;
+      background: linear-gradient(#42A1EC, #0170C9);
+      border: 1px solid #0077CC;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 5px;
+      font-size: 17px;
+      cursor: pointer; }
+  .bag h1 {
+    font-size: 40px;
+    margin-bottom: 0px; }
+  .bag h2, .bag h3, .bag h4 {
+    margin-top: 0px; }
+  .bag .bag-icon {
+    width: 17px;
+    height: 17px; }
+  .bag .remove-link {
+    margin-top: -20px; }

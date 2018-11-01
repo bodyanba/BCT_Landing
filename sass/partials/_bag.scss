@@ -1,0 +1,111 @@
+.bag {
+	min-height: 100vh;
+    color: var(--clr-Btext);
+    background-color: var(--clr-Wback);
+    padding-top: 1px;
+    padding-bottom: 50px;
+
+    &__items{
+        display: flex;
+        align-items: flex-start;
+        border-bottom: 1px solid #D6D6D6;
+        margin: 40px 0px;
+
+        &__info{
+            width: 100%;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            &__title{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                h2:first-child{
+                    width: 50%;
+                }
+            }
+            &__options,
+            &__delivery {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0px;
+                padding: 10px 0px;
+                border-top: 1px solid #D6D6D6;
+                border-bottom: 1px solid #D6D6D6;
+                width: 100%;
+
+                &__text{
+                    width: 100%;
+                    margin-left: 10px;
+                }
+            }
+            &__delivery{
+                border: 0;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    &__form{
+        width: calc(100% - 255px);
+        margin-left: 255px;
+        
+
+        &__subtotal{
+            border-bottom: 1px solid #D6D6D6;
+            margin-bottom: 20px;
+
+            & > div{
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    margin: 5px 0px;
+                }
+            }
+        }
+
+        &__total{
+            display: flex;
+            justify-content: space-between;
+            & > div {
+                text-align: right;
+            }
+        }
+        &__btn{
+            width: 362px;
+            margin-left: calc(100% - 362px);
+            margin-top: 20px;
+            height: 54px;
+            background: linear-gradient(#42A1EC, #0170C9);
+            border: 1px solid #0077CC;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 5px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+    h2,h3,h4{
+        margin-top: 0px;
+    }
+
+    .bag-icon{
+        width: 17px;
+        height: 17px;
+    }
+
+    .remove-link{
+        margin-top: -20px;
+    }
+}
