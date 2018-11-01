@@ -4,3 +4,31 @@
 .content {
 	
 }
+
+.intro{
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+
+	&__img{
+		
+	}
+
+	&__title{
+		max-width: 600px;
+		font-size: 80px;
+		font-family: $sfpDisplaySB;
+		margin: 0 auto;
+	}
+
+	&__desc{
+		max-width: 740px;
+		font-size: 32px;
+		font-family: $sfpDisplaySB;
+		margin: 0 auto;
+	}
+}
