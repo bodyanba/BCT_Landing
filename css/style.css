@@ -429,7 +429,7 @@ body {
   background: #fff;
   color: #515151;
   font-size: 14px;
-  line-height: 1.36; }
+  line-height: 1.26; }
 
 a {
   color: #0680ba;
@@ -515,11 +515,14 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 45px; }
+    height: 45px;
+    margin: 0 auto;
+    padding: 0; }
 
 .logo {
   height: 20px;
-  width: 95px; }
+  width: 95px;
+  margin: 0 0 0 15px; }
   .logo__link {
     display: block;
     height: 100%;
@@ -532,7 +535,7 @@ h6 {
   list-style: none;
   display: flex; }
   .head-menu__item {
-    margin: 0 74px 0 0;
+    margin: 0 50px 0 0;
     display: flex;
     align-items: center; }
     .head-menu__item:last-child {
@@ -540,7 +543,10 @@ h6 {
   .head-menu__link {
     color: #fff;
     display: block;
-    padding: 2px; }
+    padding: 0 15px;
+    height: 45px;
+    display: flex;
+    align-items: center; }
   .head-menu__icon {
     fill: #fff; }
     .head-menu__icon.search {
@@ -552,10 +558,13 @@ h6 {
 
 /* Content
 -----------------------------------------------------------------------------*/
+.content {
+  padding: 45px 0 0; }
+
 .intro {
   min-height: 100vh;
   align-items: center;
-  justify-content: center;
+  /*justify-content: center;*/
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -564,12 +573,29 @@ h6 {
     max-width: 600px;
     font-size: 80px;
     font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
-    margin: 0 auto; }
+    margin: 16px auto 40px; }
   .intro__desc {
     max-width: 740px;
     font-size: 32px;
     font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
-    margin: 0 auto; }
+    margin: 0 auto 63px; }
+  .intro__more {
+    font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+    font-size: 24px; }
+    .intro__more a {
+      margin: 0 30px;
+      color: #fff; }
+    .intro__more .sprite-icon {
+      position: relative;
+      fill: #fff;
+      margin: 0 0 0 5px; }
+      .intro__more .sprite-icon.video {
+        top: 5px;
+        width: 26px;
+        height: 26px; }
+      .intro__more .sprite-icon.arrow-more {
+        width: 7px;
+        height: 13px; }
 
 /* Footer
 -----------------------------------------------------------------------------*/

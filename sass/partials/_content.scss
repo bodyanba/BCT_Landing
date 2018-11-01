@@ -2,13 +2,13 @@
 -----------------------------------------------------------------------------*/
 
 .content {
-	
+	padding: 45px 0 0;
 }
 
 .intro{
 	min-height: 100vh;
 	align-items: center;
-	justify-content: center;
+	/*justify-content: center;*/
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -22,13 +22,40 @@
 		max-width: 600px;
 		font-size: 80px;
 		font-family: $sfpDisplaySB;
-		margin: 0 auto;
+		margin: 16px auto 40px;
 	}
 
 	&__desc{
 		max-width: 740px;
 		font-size: 32px;
 		font-family: $sfpDisplaySB;
-		margin: 0 auto;
+		margin: 0 auto 63px;
+	}
+
+	&__more{
+		font-family: $sfpDisplaySB;
+		font-size: 24px;
+
+		a{
+			margin: 0 30px;
+			color: #fff;
+		}
+
+		.sprite-icon{
+			position: relative;
+			fill: #fff;
+			margin: 0 0 0 5px;
+
+			&.video{
+				top: 5px;
+				width: 26px;
+				height: 26px;
+			}
+
+			&.arrow-more{
+				width: 7px;
+				height: 13px;
+			}
+		}
 	}
 }
