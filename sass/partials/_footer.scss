@@ -13,7 +13,7 @@
 	display: flex;
 	justify-content: space-between;
 	max-width: 1000px;
-	margin: 60px auto 55px;
+	margin: 60px auto 50px;
 
 	&__item{
 		width: 220px;
@@ -27,7 +27,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin: 0 auto 16px;
+		margin: 0 auto 10px;
 	}
 
 	&__icon{
@@ -57,13 +57,14 @@
 	&__title{
 		font-size: 19px;
 		margin: 10px 0 10px;
+		color: #CACAC9;
 	}
 
 	&__desc{
 		font-size: 14px;
 		color: #CACAC9;
 		margin: 10px 0 12px;
-		line-height: 1.5;
+		line-height: 1.46;
 	}
 
 	&__more{
@@ -90,7 +91,7 @@
 
 .f-shop{
 	font-size: 11px;
-	padding: 18px 0 11px;
+	padding: 17px 0 10px;
 	
 	a{
 		color: #71B3E2;
