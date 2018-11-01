@@ -15,4 +15,17 @@ $(function() {
 	$('input[placeholder], textarea[placeholder]').placeholder();
 	
 
+
+	init();
 });
+
+function init() {
+	$(".header").load("components/header.html"); 
+	$(".footer").load("components/footer.html"); 
+
+	$(".content").load("components/terminal.html"); 
+}
+
+function goto(page) {
+	$(".content").load("components/" + page + ".html"); 
+}
