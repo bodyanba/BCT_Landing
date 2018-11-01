@@ -23,9 +23,13 @@ function init() {
 	$(".header").load("components/header.html"); 
 	$(".footer").load("components/footer.html"); 
 
-	$(".content").load("components/terminal.html"); 
+	$(".content").load("components/terminal.html");
+
+	if (location.pathname != '/'){
+		goto(location.pathname);
+	}
 }
 
 function goto(page) {
-	$(".content").load("components/" + page + ".html"); 
+	$(".content").load("components" + page); 
 }
