@@ -24,10 +24,6 @@ function init() {
 	$(".footer").load("components/footer.html"); 
 
 	$(".content").load("components/terminal.html");
-
-	if (location.pathname != '/'){
-		goto(location.pathname);
-	}
 }
 
 function goto(page) {
