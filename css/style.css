@@ -1327,7 +1327,7 @@ h6 {
 -----------------------------------------------------------------------------*/
 .content {
   padding: 100px 0 0; }
-  .content section {
+  .content > section {
     width: 100%; }
 
 .section {
@@ -1693,9 +1693,27 @@ h6 {
         height: 650px; }
 
 .components {
-  min-height: 50vh;
+  min-height: 70vh;
+  width: 100%;
   color: var(--clr-Btext);
-  background-color: var(--clr-Wback); }
+  background-color: var(--clr-Wback);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .components__title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 0; }
+  .components__list {
+    width: fit-content; }
+  .components__item {
+    display: inline-block;
+    width: 220px; }
+    .components__item img {
+      width: 220px; }
+    .components__item__desc {
+      text-align: center; }
 
 .movies {
   min-height: 80vh;

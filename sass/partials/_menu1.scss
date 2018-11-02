@@ -160,9 +160,32 @@
 }
 
 .components {
-	min-height: 50vh;
+    min-height: 70vh;
+    width: 100%;
     color: var(--clr-Btext);
     background-color: var(--clr-Wback);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 0;
+    }
+    &__list {
+        width: fit-content;
+    }
+    &__item {
+        display: inline-block;
+        width: 220px;
+        img {
+            width: 220px;
+        }
+        &__desc {
+            text-align: center;
+        }
+    }
 }
 
 .movies {
