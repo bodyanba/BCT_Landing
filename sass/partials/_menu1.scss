@@ -80,13 +80,20 @@
                     width: 90px;
                     height: 39px;
                     color: var(--clr-Wtext);
-                    background-color: #3194E1;
+                    //background-color: #3194E1;
                     font-size: 19px;
                     margin-top: 21px;
                     border-width: 0px;
                     border-radius: 5px;
+                    cursor: pointer;
+                    background: linear-gradient(#42a1ec,#0170c9);
+                    border: 1px solid #07c;
                     &:hover {
-                        background-color: #3194E1;
+                        background: linear-gradient(#929292,#5C5C5C);
+                        border: 1px solid #666666;
+                    }
+                    &:focus {
+                        outline: none;
                     }
                 }
             }
@@ -226,7 +233,8 @@
 }
 
 .fre-questions {
-	min-height: 130vh;
+    min-height: 120vh;
+    padding: 40px 0 120px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -283,10 +291,16 @@
         }
 
         .faq-a {
-            .learn-more {
-                cursor: pointer;
-                color: #3194E1;
+            p {
+                margin-top: 0;
+                padding-top: 14px;
             }
+            a.learn-more {
+                margin: 10px 0;
+                display: block;
+                cursor: pointer;
+            }
+            display: none;
         }
         
         .faq-t {
