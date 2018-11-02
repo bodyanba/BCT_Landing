@@ -1593,7 +1593,7 @@ h6 {
     padding-top: 15px;
     font-size: 12px; }
     .models__question a {
-      color: #38f;
+      color: #3194E1;
       display: inline; }
   .models__mode {
     height: 52px;
@@ -1748,8 +1748,70 @@ h6 {
 
 .fre-questions {
   min-height: 130vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   color: var(--clr-Btext);
   background-color: var(--clr-Wback); }
+  .fre-questions > div {
+    width: 54vw; }
+  .fre-questions__head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; }
+    .fre-questions__head__img {
+      width: 40%; }
+      .fre-questions__head__img img {
+        width: 100%; }
+    .fre-questions__head__title {
+      width: 40%; }
+      .fre-questions__head__title p {
+        width: 100%;
+        text-align: left;
+        font-size: 2.2em;
+        font-weight: 600;
+        margin: 5px 0; }
+  .fre-questions__body .faq-header {
+    font-size: 1.6em;
+    border-bottom: 1px dotted #ccc;
+    padding: 1em 0;
+    font-weight: 600; }
+  .fre-questions__body .faq-c {
+    border-bottom: 1px dotted #ccc;
+    padding: 1em 0; }
+  .fre-questions__body .faq-q {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0; }
+  .fre-questions__body .faq-a .learn-more {
+    cursor: pointer;
+    color: #3194E1; }
+  .fre-questions__body .faq-t {
+    line-height: 1em;
+    color: #aaa;
+    font-family: sans-serif;
+    float: left;
+    font-weight: 700;
+    padding-right: 0.3em;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    transition: all 200ms;
+    position: absolute;
+    right: 0; }
+  .fre-questions__body .faq-o {
+    transform: rotate(-45deg);
+    transform-origin: 50% 50%;
+    -ms-transform: rotate(-45deg);
+    -ms-transform-origin: 50% 50%;
+    -webkit-transform: rotate(-45deg);
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    transition: all 200ms; }
 
 .bag {
   min-height: 100vh;

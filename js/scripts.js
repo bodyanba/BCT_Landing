@@ -44,20 +44,27 @@ function init() {
 
 
 function formatContent() {
-	console.log($(".regular"))
-	// $('.carousel__content').slick({
-    //     dots: true,
-    //     vertical: true,
-    //     centerMode: true,
-    //     slidesToShow: 4,
-    //     slidesToScroll: 2
-	// });
 	setTimeout(() => {
 		$(".carousel__content").slick(
 			{
 				dots: true
 			}
 		);	
+
+		$(".faq-q").click( function () {
+			var container = $(this).parents(".faq-c");
+			var answer = container.find(".faq-a");
+			var trigger = container.find(".faq-t");
+	
+			answer.slideToggle(200);
+			
+			if (trigger.hasClass("faq-o")) {
+				trigger.removeClass("faq-o");
+			}
+			else {
+				trigger.addClass("faq-o");
+			}
+		});
 	}, 500);
 }
 
