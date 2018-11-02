@@ -6,7 +6,6 @@
 	flex-direction: column;
     color: var(--clr-Btext);
     background-color: var(--clr-Wback);
-    margin-top: 65px;
     
     &__question {
         height: 44px;
@@ -89,12 +88,21 @@
                     background: linear-gradient(#42a1ec,#0170c9);
                     border: 1px solid #07c;
                     &:hover {
-                        background: linear-gradient(#929292,#5C5C5C);
-                        border: 1px solid #666666;
+                        background: linear-gradient(#42a1ec,#0170c9);
+                        border: 1px solid #07c;
                     }
                     &:focus {
                         outline: none;
-                    }
+                    }                    
+                }
+            }
+            
+            &:nth-child(2) button {
+                background: linear-gradient(#929292,#5C5C5C);
+                border: 1px solid #666666;
+                &:hover {
+                    background: linear-gradient(#42a1ec,#0170c9);
+                    border: 1px solid #07c;
                 }
             }
             &__imgwrapper {
@@ -167,7 +175,7 @@
 }
 
 .components {
-    min-height: 70vh;
+    min-height: 80vh;
     width: 100%;
     color: var(--clr-Btext);
     background-color: var(--clr-Wback);
