@@ -3,6 +3,10 @@
 
 .content {
 	padding: 100px 0 0;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	flex: 1 1;
 
 	& > section {
 		width: 100%;
@@ -214,4 +218,133 @@
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+.new-terminal{
+	padding: 30px 15px;
+	margin: auto 0;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: auto;
+	max-width: 1020px;
+
+	&__left{
+		width: 60%;
+		flex: 1 1 60%;
+		margin: 0 20px 0 0;
+		display: flex;
+		align-items: center;
+
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__right{
+		width: 360px;
+		flex: 0 0 360px;
+		display: flex;
+		align-items: center;
+	}
+
+
+	@media only screen and (max-width : 680px) {
+		flex-direction: column;
+		max-width: 360px;
+
+		&__left{
+			margin: 0;
+			width: 100%;
+		}
+
+		&__right{
+			width: 100%;
+		}
+	}
+}
+
+.terminal-form{
+	color: #000;
+
+	&__title{
+		font-family: $sfpDisplaySB;
+		font-size: 45px;
+		color: #000;
+		margin: 0 0 44px;
+		line-height: 1.2;
+		letter-spacing: -0.003em;
+	}
+
+	&__separator{
+		height: 1px;
+		width: 100%;
+		background: #ccc;
+	}
+
+	&__qty-line{
+		font-family: $sfpDisplaySB;
+		font-size: 25px;
+		display: flex;
+		justify-content: space-between;
+		padding: 14px 0;
+	}
+
+	&__line{
+		position: relative;
+		margin: 0 0 32px;
+	}
+	
+	&__input{
+		height: 56px;
+		border: 1px solid #ccc;
+		width: 100%;
+		border-radius: 4px;
+		padding: 0 70px 0 18px;
+		color: #000;
+
+		&::placeholder{
+			color: #888888;
+		}
+	}
+
+	&__apply{
+		font-family: $sfpDisplaySB;
+		font-size: 18px;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		padding: 0 18px;
+		height: 56px;
+		color: #0070C9;
+		background: transparent;
+		border: none;
+		transform: translateY(-50%);
+		cursor: pointer;
+	}
+
+	&__submit{
+		margin: 32px 0 0;
+		border-radius: 4px;
+		padding: 0 10px;
+		color: #fff;
+		height: 42px;
+		font-size: 18px;
+		border: 1px solid #2c8ed4;
+		background: linear-gradient(to bottom, #42a1ec 0%,#0473cb 100%);
+		cursor: pointer;
+		width: 100%;
+	}
+
+
+	@media only screen and (max-width : 680px) {
+		width: 100%;
+		
+		&__title{
+			text-align: center;
+			font-size: 36px;
+			margin: 28px 0;
+		}
+	}
 }
