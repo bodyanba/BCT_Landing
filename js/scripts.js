@@ -10,6 +10,10 @@ $(function(){(function(e){function t(t){this.input=t;if(t.attr("type")=="passwor
 
 
 $(function() {
+	
+	/*---------------------------------------------------*/
+
+	$('select').selectize();
 
 	/*---------------------------------------------------*/
 
