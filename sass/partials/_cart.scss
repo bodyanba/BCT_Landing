@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-height: 92vh;
+    min-height: 84vh;
     align-items: center;
     color: var(--clr-Btext);
     background: #f9f9f9;
@@ -40,7 +40,7 @@
     }
     &__body {
         width: 52vw;
-        height: -webkit-fill-available;
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -73,7 +73,7 @@
                     font-size: 12px;
                 }
                 p.label {
-                    font-size: 18px;
+                    font-size: 17px;
                     font-weight: 600;
                 }
                 p.desc {
