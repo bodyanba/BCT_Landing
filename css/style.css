@@ -2883,7 +2883,8 @@ h6 {
   .terminal section:nth-child(4) {
     padding-bottom: 295px; }
   .terminal section:nth-child(5) {
-    padding-top: 20px; }
+    padding-top: 20px;
+    padding-bottom: 50px; }
   .terminal section.gray {
     background-color: #FAFAFA; }
   .terminal section.black {
@@ -2957,49 +2958,58 @@ h6 {
   transform: scale(1.1);
   transform-origin: top right; }
 
-.terminal .slider {
-  width: 630px; }
-
-.terminal .slick-prev,
-.terminal .slick-next {
-  top: 67%;
-  width: 45px;
-  height: 46px; }
-
 .terminal .slick-prev:before,
 .terminal .slick-next:before {
   font-size: 45px;
   color: #363636; }
 
-.terminal .slick-prev {
-  left: -145px; }
-
+.terminal .slick-prev,
 .terminal .slick-next {
-  right: -145px; }
+  width: 45px;
+  height: 46px; }
 
-.terminal .slick-dots {
-  width: calc(100% - 30px);
-  bottom: -33px; }
+.terminal .slider {
+  width: 630px; }
+  .terminal .slider .slick-prev,
+  .terminal .slider .slick-next {
+    top: 67%; }
+  .terminal .slider .slick-prev {
+    left: -145px; }
+  .terminal .slider .slick-next {
+    right: -145px; }
+  .terminal .slider .slick-dots {
+    width: calc(100% - 30px);
+    bottom: -33px; }
+  .terminal .slider .slick-dots li {
+    margin: 0 -2px; }
+  .terminal .slider .slick-dots li button:before {
+    color: white !important; }
 
-.terminal .slick-dots li {
-  margin: 0 -2px; }
+.terminal .movies-block .slick-prev,
+.terminal .movies-block .slick-next {
+  top: 40%; }
 
-.terminal .slick-dots li button:before {
-  color: white !important; }
+.terminal .movies-block .slick-prev {
+  left: -45px; }
+
+.terminal .movies-block .slick-next {
+  right: -45px; }
 
 .terminal .movie-item {
   padding: 0px 10px;
   color: #3D3D3D; }
   .terminal .movie-item p {
-    text-align: center; }
+    text-align: center;
+    margin-top: 0px;
+    font-size: 16px; }
   .terminal .movie-item iframe {
     max-width: 100%;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #3D3D3D; }
 
 .terminal .movies-slider {
   margin: 0px -10px;
-  margin-bottom: 24px; }
+  margin-bottom: 10px; }
 
 .bag {
   min-height: 100vh;
