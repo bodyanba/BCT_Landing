@@ -3164,14 +3164,14 @@ h6 {
   .order-modal a {
     color: #0070C9; }
 
-.content {
+.cart-content {
   padding-top: 45px !important; }
 
 .cart {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 92vh;
+  min-height: 84vh;
   align-items: center;
   color: var(--clr-Btext);
   background: #f9f9f9; }
@@ -3200,7 +3200,7 @@ h6 {
       font-size: 22px; }
   .cart__body {
     width: 52vw;
-    height: -webkit-fill-available;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center; }
@@ -3226,7 +3226,7 @@ h6 {
           color: red;
           font-size: 12px; }
         .cart__body .row .column-2 p.label {
-          font-size: 18px;
+          font-size: 17px;
           font-weight: 600; }
         .cart__body .row .column-2 p.desc {
           font-size: 14px;
