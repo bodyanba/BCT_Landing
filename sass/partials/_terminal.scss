@@ -38,6 +38,8 @@
         }
         .image-info{
             display: flex;
+            align-items: flex-start;
+
             .info,img{
                 width: 50%;
             }
@@ -110,11 +112,7 @@
             padding: 0 45px;
             h3 {
                 font-size: 30px;
-               // padding-left: 30px;
                 margin-bottom: 25px;
-            }
-            p{
-               // padding-left: 30px;
             }
         }
     }
