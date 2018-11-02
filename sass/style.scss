@@ -54,6 +54,8 @@ a {
 }
 
 .wrapper {
+	display: flex;
+	flex-direction: column;
 	position: relative;
 	overflow: hidden;
 	min-height: 100%;
@@ -83,6 +85,8 @@ h6 {
 
 
 @import "vendor/aos";
+@import "vendor/slick";
+@import "vendor/slick-theme";
 
 @import "partials/fonts";
 @import "partials/icons";

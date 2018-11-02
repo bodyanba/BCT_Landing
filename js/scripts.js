@@ -35,14 +35,6 @@ $(function() {
 	init();
 });
 
-function init() {
-	$(".header").load("components/header.html"); 
-	$(".footer").load("components/footer.html"); 
-
-	$(".content").load("components/terminal.html");
-}
-
-
 function formatContent() {
 	setTimeout(() => {
 		$(".carousel__content").slick(
@@ -66,9 +58,4 @@ function formatContent() {
 			}
 		});
 	}, 500);
-}
-
-function goto(page) {
-	$(".content").load("components/" + page + ".html"); 
-	formatContent();
 }
