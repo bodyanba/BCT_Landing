@@ -2863,23 +2863,20 @@ h6 {
   margin: 0;
   color: black; }
 
-.terminal h1 {
-  letter-spacing: -4.5px; }
-
 .terminal h4 {
   font-size: 32px;
-  letter-spacing: -1.6px;
+  letter-spacing: .2px;
   margin-top: -5px;
   margin-bottom: 30px; }
 
 .terminal section {
   min-height: 500px;
-  padding: 75px 0 125px; }
+  padding: 75px 0 80px; }
   .terminal section:nth-child(2) {
     padding: 55px 0 100px; }
   .terminal section:nth-child(3) {
     border-bottom: 2px solid #d6d6d6;
-    padding-bottom: 215px; }
+    padding-bottom: 205px; }
   .terminal section:nth-child(4) {
     padding-bottom: 295px; }
   .terminal section:nth-child(5) {
@@ -2907,7 +2904,7 @@ h6 {
     .terminal section .image-info h2 {
       margin-top: 0;
       font-size: 38px;
-      letter-spacing: -1.5px;
+      letter-spacing: -.5px;
       margin-bottom: 0; }
     .terminal section .image-info.in-the-box {
       align-items: flex-start;

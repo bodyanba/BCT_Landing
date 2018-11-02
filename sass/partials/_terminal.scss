@@ -4,24 +4,21 @@
         margin: 0;
         color: black;
     }
-    h1{
-        letter-spacing: -4.5px;
-    }
     h4{
         font-size: 32px;
-        letter-spacing: -1.6px;
+        letter-spacing: .2px;
         margin-top: -5px;
         margin-bottom: 30px;
     }
     section{
         min-height: 500px;
-        padding: 75px 0 125px;
+        padding: 75px 0 80px;
         &:nth-child(2){
             padding: 55px 0 100px;
         }
         &:nth-child(3) {
             border-bottom: 2px solid #d6d6d6;
-            padding-bottom: 215px;
+            padding-bottom: 205px;
         }
         &:nth-child(4) {
             padding-bottom: 295px;
@@ -60,7 +57,7 @@
             h2 {
                 margin-top: 0;
                 font-size: 38px;
-                letter-spacing: -1.5px;
+                letter-spacing: -.5px;
                 margin-bottom: 0;
             }
             &.in-the-box{
