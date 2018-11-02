@@ -1617,10 +1617,13 @@ h6 {
     font-size: 40px;
     font-weight: 600; }
   .models .selections {
-    width: 100%; }
+    width: 100%;
+    padding: 0 15px; }
     .models .selections__item {
       display: flex;
-      padding: 5px 28% 70px; }
+      max-width: 990px;
+      padding: 5px 50px 70px 150px;
+      margin: 0 auto; }
       .models .selections__item__info {
         text-align: left;
         margin-left: 33px;
@@ -1679,6 +1682,22 @@ h6 {
     margin: 100px auto; }
   .carousel .slick-slide {
     margin: 0px 20px; }
+  .carousel .slick-prev {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-400px, -50%);
+    z-index: 100; }
+  .carousel .slick-next {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(400px, -50%);
+    z-index: 100; }
   .carousel .slick-prev:before,
   .carousel .slick-next:before {
     color: rgba(255, 255, 255, 0.5);
@@ -1694,7 +1713,6 @@ h6 {
   .carousel .slick-dotted.slick-slider {
     margin-bottom: 80px !important; }
   .carousel__content {
-    width: 40%;
     margin: 50px auto; }
     .carousel__content__item {
       display: flex !important;
