@@ -1334,12 +1334,11 @@ h6 {
   color: #F4DED1; }
 
 .intro {
-  min-height: 100vh;
   align-items: center;
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin: 32px 0 0; }
+  margin: 32px 0 132px; }
   .intro__title {
     max-width: 600px;
     font-size: 80px;
