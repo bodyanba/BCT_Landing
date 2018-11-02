@@ -84,11 +84,80 @@
 	</header><!-- .header -->
 
 	<main class="content">
-		<div class="container">
 
-			CHECKOUT
+		<form class="checkout-form">
+			<h2 class="checkout-form__title">Where should we send your order?</h2>
 
-		</div>
+			<div class="checkout-form__cols">
+				<div class="checkout-form__col">
+					<h3 class="checkout-form__col-title">Enter your name and address:</h3>
+
+					<div class="checkout-form__line">
+						<input type="text" class="checkout-form__input" placeholder="First Name">
+					</div>
+
+					<div class="checkout-form__line">
+						<input type="text" class="checkout-form__input" placeholder="Last Name">
+					</div>
+
+					<div class="checkout-form__line">
+						<input type="text" class="checkout-form__input" placeholder="Street Address">
+					</div>
+
+					<div class="checkout-form__line">
+						<input type="text" class="checkout-form__input" placeholder="Apt, Suite, Building (Optional)">
+					</div>
+
+					<div class="checkout-form__multi-line">
+						<div class="checkout-form__line">
+							<label class="checkout-form__label">Zip Code</label>
+							<input type="text" class="checkout-form__input --with-label" placeholder="Apt, Suite, Building (Optional)" value="04106">
+						</div>
+
+						<div class="checkout-form__line">
+							<label class="checkout-form__label">City, State</label>
+
+							<select class="basic-select">
+								<option>South Portland ,ME</option>
+								<option>South Portland ,1</option>
+								<option>South Portland ,2</option>
+								<option>South Portland ,3</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="checkout-form__line">
+						<label class="checkout-form__label">Country</label>
+
+						<select class="basic-select">
+							<option>United States</option>
+							<option>China</option>
+							<option>Japan</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="checkout-form__col">
+					<h3 class="checkout-form__col-title">What’s your contact information?</h3>
+
+					<div class="checkout-form__line">
+						<input type="text" class="checkout-form__input" placeholder="Email Address">
+					</div>
+
+					<div class="checkout-form__line">
+						<input type="text" class="checkout-form__input" placeholder="Phone Number">
+					</div>
+
+					<div class="checkout-form__tips">
+						<p class="checkout-form__tip">We'll email you a receipt and send order updates to your mobile phone via SMS</p>
+						<p class="checkout-form__tip">The phone number you enter can't be changed after you place your order, so please make sure it's correct.</p>
+					</div>
+
+					<button class="checkout-form__submit" type="submit">Continue to Payment</button>
+				</div>
+			</div>
+		</form>
+
 	</main><!-- .content -->
 
 	<footer class="footer">
@@ -102,6 +171,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="libs/slick/slick.js"></script>
+<script type="text/javascript" src="js/selectize.min.js"></script>
 <script src="js/scripts.js"></script>
 
 </body>
