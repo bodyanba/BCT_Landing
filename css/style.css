@@ -1586,8 +1586,7 @@ h6 {
   display: flex;
   flex-direction: column;
   color: var(--clr-Btext);
-  background-color: var(--clr-Wback);
-  margin-top: 65px; }
+  background-color: var(--clr-Wback); }
   .models__question {
     height: 44px;
     width: 100%;
@@ -1645,13 +1644,24 @@ h6 {
           width: 90px;
           height: 39px;
           color: var(--clr-Wtext);
-          background-color: #3194E1;
           font-size: 19px;
           margin-top: 21px;
           border-width: 0px;
-          border-radius: 5px; }
+          border-radius: 5px;
+          cursor: pointer;
+          background: linear-gradient(#42a1ec, #0170c9);
+          border: 1px solid #07c; }
           .models .selections__item__info button:hover {
-            background-color: #3194E1; }
+            background: linear-gradient(#42a1ec, #0170c9);
+            border: 1px solid #07c; }
+          .models .selections__item__info button:focus {
+            outline: none; }
+      .models .selections__item:nth-child(2) button {
+        background: linear-gradient(#929292, #5C5C5C);
+        border: 1px solid #666666; }
+        .models .selections__item:nth-child(2) button:hover {
+          background: linear-gradient(#42a1ec, #0170c9);
+          border: 1px solid #07c; }
       .models .selections__item__imgwrapper {
         width: fit-content; }
         .models .selections__item__imgwrapper__img {
@@ -1694,7 +1704,7 @@ h6 {
         height: 650px; }
 
 .components {
-  min-height: 70vh;
+  min-height: 80vh;
   width: 100%;
   color: var(--clr-Btext);
   background-color: var(--clr-Wback);
@@ -1748,7 +1758,8 @@ h6 {
       text-align: center; }
 
 .fre-questions {
-  min-height: 130vh;
+  min-height: 120vh;
+  padding: 40px 0 120px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1788,9 +1799,15 @@ h6 {
     font-size: 16px;
     font-weight: 600;
     margin: 10px 0; }
-  .fre-questions__body .faq-a .learn-more {
-    cursor: pointer;
-    color: #3194E1; }
+  .fre-questions__body .faq-a {
+    display: none; }
+    .fre-questions__body .faq-a p {
+      margin-top: 0;
+      padding-top: 14px; }
+    .fre-questions__body .faq-a a.learn-more {
+      margin: 10px 0;
+      display: block;
+      cursor: pointer; }
   .fre-questions__body .faq-t {
     line-height: 1em;
     color: #aaa;
