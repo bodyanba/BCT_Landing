@@ -36,7 +36,7 @@ $(function() {
 	
 	/*---------------------------------------------------*/
 
-	init();
+	//init();
 });
 
 function formatContent() {
@@ -63,3 +63,22 @@ function formatContent() {
 		});
 	}, 500);
 }
+
+
+
+/// new code for "new version" branch
+
+$(function () {
+	$(".slider").slick(
+		{
+			dots: true
+		}
+	);
+
+	$(".movies-slider").slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots:true
+	});
+});
