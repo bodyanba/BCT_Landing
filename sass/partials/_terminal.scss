@@ -127,6 +127,23 @@
         width: 630px;
     }
 
+    .slick-prev,
+    .slick-next{
+        top: 67%;
+        width: 45px;
+        height: 46px;
+    }
+    .slick-prev:before,
+    .slick-next:before{
+        font-size: 45px;
+        color: #363636;
+    }
+    .slick-prev {
+        left: -145px;
+    }
+    .slick-next {
+        right: -145px;
+    }
     .slick-dots{
         width: calc(100% - 30px);
         bottom: -33px;

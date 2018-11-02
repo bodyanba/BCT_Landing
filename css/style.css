@@ -2481,6 +2481,9 @@ h6 {
   text-align: center; }
   .footer .container {
     padding: 52px 15px; }
+  .footer.light {
+    background: #F2F2F2;
+    color: #000; }
 
 .com-features {
   display: flex;
@@ -2956,6 +2959,23 @@ h6 {
 
 .terminal .slider {
   width: 630px; }
+
+.terminal .slick-prev,
+.terminal .slick-next {
+  top: 67%;
+  width: 45px;
+  height: 46px; }
+
+.terminal .slick-prev:before,
+.terminal .slick-next:before {
+  font-size: 45px;
+  color: #363636; }
+
+.terminal .slick-prev {
+  left: -145px; }
+
+.terminal .slick-next {
+  right: -145px; }
 
 .terminal .slick-dots {
   width: calc(100% - 30px);
