@@ -54,10 +54,13 @@ a {
 }
 
 .wrapper {
+	display: flex;
+	flex-direction: column;
 	position: relative;
 	overflow: hidden;
 	min-height: 100%;
 	min-width: 300px;
+	background: #f9f9f9;
 
 	&.--dark{
 		background: #000;
@@ -65,7 +68,7 @@ a {
 }
 
 .container {
-	max-width: 990px;
+	max-width: 1020px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -77,12 +80,16 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: normal;
-	font-family: $sfpTextSB;
+	font-weight: 600;
+	font-family: $sfpDisplaySB;
 }
 
 
 @import "vendor/aos";
+@import "vendor/slick";
+@import "vendor/slick-theme";
+@import "vendor/selectize";
+@import "vendor/selectize.default";
 
 @import "partials/fonts";
 @import "partials/icons";
@@ -95,5 +102,7 @@ h6 {
 
 @import "partials/media";
 @import "partials/menu1";
+@import "partials/terminal";
 @import "partials/bag";
 @import "partials/order";
+@import "partials/cart";

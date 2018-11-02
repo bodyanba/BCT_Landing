@@ -10,6 +10,10 @@ $(function(){(function(e){function t(t){this.input=t;if(t.attr("type")=="passwor
 
 
 $(function() {
+	
+	/*---------------------------------------------------*/
+
+	$('select').selectize();
 
 	/*---------------------------------------------------*/
 
@@ -32,16 +36,8 @@ $(function() {
 	
 	/*---------------------------------------------------*/
 
-	init();
+	//init();
 });
-
-function init() {
-	$(".header").load("components/header.html"); 
-	$(".footer").load("components/footer.html"); 
-
-	$(".content").load("components/terminal.html");
-}
-
 
 function formatContent() {
 	setTimeout(() => {
@@ -68,7 +64,21 @@ function formatContent() {
 	}, 500);
 }
 
-function goto(page) {
-	$(".content").load("components/" + page + ".html"); 
-	formatContent();
-}
+
+
+/// new code for "new version" branch
+
+$(function () {
+	$(".slider").slick(
+		{
+			dots: true
+		}
+	);
+
+	$(".movies-slider").slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots:true
+	});
+});
