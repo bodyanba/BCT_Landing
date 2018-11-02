@@ -1475,7 +1475,8 @@ h6 {
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-  padding: 10px 0 30px; }
+  padding: 10px 0 30px;
+  background: #000; }
 
 .com-features {
   display: flex;
