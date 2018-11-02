@@ -3200,7 +3200,7 @@ h6 {
       font-size: 22px; }
   .cart__body {
     width: 52vw;
-    margin-top: 50px;
+    margin-top: 4vh;
     display: flex;
     flex-direction: column;
     justify-content: center; }
@@ -3209,7 +3209,7 @@ h6 {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      margin-bottom: 30px; }
+      margin-bottom: 22px; }
       .cart__body .row > div {
         display: flex;
         flex-direction: column;
@@ -3217,7 +3217,7 @@ h6 {
       .cart__body .row .column-1 {
         width: 25%; }
         .cart__body .row .column-1 img {
-          width: 68%; }
+          width: 66%; }
       .cart__body .row .column-2 {
         width: 45%; }
         .cart__body .row .column-2 p {
@@ -3272,7 +3272,7 @@ h6 {
       .cart__body .cart__part1__title {
         padding-left: 25%;
         font-size: 34px;
-        margin-top: 55px; }
+        margin: 50px 0 30px; }
       .cart__body .cart__part1__table {
         width: 100%;
         margin-top: 14px; }
@@ -3282,16 +3282,18 @@ h6 {
         font-size: 22px; }
       .cart__body .cart__part2__table {
         width: 100%; }
-    .cart__body .cart__part3 > div {
-      position: relative;
-      margin: 6px;
-      width: 100%; }
-    .cart__body .cart__part3 .value {
-      position: absolute;
-      right: 0; }
-    .cart__body .cart__part3 .total {
-      font-size: 16px;
-      font-weight: 600; }
+    .cart__body .cart__part3 {
+      border-bottom: 1px solid #d6d6d6; }
+      .cart__body .cart__part3 > div {
+        position: relative;
+        margin: 6px;
+        width: 100%; }
+      .cart__body .cart__part3 .value {
+        position: absolute;
+        right: 0; }
+      .cart__body .cart__part3 .total {
+        font-size: 16px;
+        font-weight: 600; }
     .cart__body .check__btn {
       text-align: right;
       margin-top: 20px; }
