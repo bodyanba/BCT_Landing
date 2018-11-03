@@ -11,8 +11,9 @@
     background: #f9f9f9;
 
     &__header {
-        border-bottom:  2px solid #d6d6d6;
+        border-bottom: 1px solid #1b1b1b;
         width: 100%;
+        height: 55px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -20,7 +21,7 @@
         ul {
             position: absolute;
             right: 0px;
-            top: 0;    
+            top: 10px;    
             list-style: none;
             margin: 0;
             li {
@@ -40,10 +41,10 @@
     }
     &__body {
         width: 52vw;
-        margin-top: 4vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        min-height: calc(84vh - 56px);
 
         .row {
             width: 100%;
@@ -106,6 +107,10 @@
                 align-items: flex-end;
                 width: 15%;
 
+                span {    
+                    margin: 8px 0 3px;
+                }
+
                 a {
                     cursor: pointer;
                 }
@@ -155,7 +160,7 @@
         }
         .cart__part3 {
             border-bottom:  1px solid #d6d6d6;
-            
+
             & > div {
                 position: relative;
                 margin: 6px;
@@ -172,7 +177,7 @@
         }
         .check__btn {
             text-align: right;
-            margin-top: 20px;
+            margin: 20px 0;
             button {
                 width: 362px;
                 height: 54px;
