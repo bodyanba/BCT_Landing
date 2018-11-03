@@ -3272,8 +3272,7 @@ h6 {
             width: 12px;
             height: 12px;
             margin-top: 4px;
-            margin-left: -18px;
-            z-index: 1; }
+            margin-left: -18px; }
       .cart__body .row .column-4 {
         display: flex;
         flex-direction: column;
@@ -3351,7 +3350,7 @@ h6 {
         font-size: 14px;
         border-radius: 0px;
         border: 0;
-        background: #f9f9f9;
+        background: transparent;
         box-shadow: none;
         padding: 0;
         margin-left: 8px; }
@@ -3359,7 +3358,8 @@ h6 {
           display: none; }
       .cart__body .basic-select.single .selectize-dropdown {
         z-index: 11;
-        background: #f9f9f9; }
+        background: #f9f9f9;
+        border: 1px solid #d0d0d0; }
 
 .cart-footer {
   display: flex;

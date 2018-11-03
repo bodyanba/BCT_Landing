@@ -97,7 +97,6 @@
                         height: 12px;
                         margin-top: 4px;
                         margin-left: -18px;
-                        z-index: 1;
                     }
                 }
             }
@@ -208,7 +207,7 @@
                 font-size: 14px;
                 border-radius: 0px;
                 border: 0;
-                background: #f9f9f9;
+                background: transparent;
                 box-shadow: none;
                 padding: 0;
                 margin-left: 8px;
@@ -221,6 +220,7 @@
             .selectize-dropdown{
                 z-index: 11;
                 background: #f9f9f9;
+                border: 1px solid #d0d0d0;
             }
         }
     }
