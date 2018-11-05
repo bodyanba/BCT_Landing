@@ -89,7 +89,9 @@
                 }
             }
         }
-        .btn{
+        .btn {
+                display: block;
+                text-decoration: none;
                 width: 137px;
                 height: 35px;
                 background: linear-gradient(#42a1ec, #0170c9);
