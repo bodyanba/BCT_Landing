@@ -11,7 +11,6 @@
         margin-bottom: 30px;
     }
     section{
-        min-height: 500px;
         padding: 75px 0 80px;
         &:nth-child(2){
             padding: 55px 0 100px;
@@ -40,6 +39,9 @@
 
             .info,img{
                 width: 50%;
+            }
+            .info{
+                z-index: 1;
             }
             ul{
                 padding-left: 4px;
@@ -241,5 +243,90 @@
     &.open {
         opacity: 1;
         visibility: visible;
+    }
+}
+
+@media (max-width: 1060px) {
+    .terminal .image-info{
+        padding: 0px 20px;
+    }
+
+    .terminal .slider .slick-prev,
+    .terminal .slider .slick-next {
+            top: 50%;
+    }
+    .terminal .slider .slick-prev {
+        left: -60px;
+    }
+    .terminal .slider .slick-next {
+        right: -60px;
+    }
+
+    .terminal .movies-block{
+        width: calc(100% - 100px);
+    }
+}
+
+@media (max-width: 800px) {
+    .terminal section .image-info{
+        flex-direction: column;
+    }
+    .terminal section .image-info .info,
+    .terminal section .image-info.security .info,
+    .terminal section .image-info img,
+    .terminal section .image-info.security img {
+        width: 100%;
+        transform: none;
+    }
+    .terminal h1{
+        font-size: 50px;
+    }
+    .terminal h4{
+        font-size: 29px;
+    }
+    .terminal section .image-info ul{
+        margin-top: 14px;
+    }
+    .terminal section .image-info .info{
+        margin: 50px 0px !important;
+        padding-top: 0px !important;
+    }
+    .terminal section:nth-child(3),
+    .terminal section:nth-child(4){
+        padding-bottom: 10px;
+        padding-top: 0px;
+    }
+    .terminal .slider{
+        width: calc(100% - 140px);
+    }
+    #videoModal{
+        width: 90%;
+    }
+}
+@media (max-width: 450px) {
+    .terminal h1{
+        font-size: 32px;
+    }
+    .terminal h4{
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+    .terminal section .image-info .info{
+        margin: 30px 0 !important;
+    }
+    .terminal section .image-info h2{
+        font-size: 30px;
+    }
+    .terminal section .image-info ul li{
+        font-size: 22px;
+    }
+    .terminal section .image-info.in-the-box{
+        padding-top: 80px;
+    }
+    .terminal section .image-info.security img{
+        margin-top: 0px;
+    }
+    .terminal section:nth-child(1){
+        padding: 30px 0 80px;
     }
 }
