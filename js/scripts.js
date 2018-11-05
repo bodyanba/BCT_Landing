@@ -91,5 +91,6 @@ $(function () {
 	$('#overlay').click(function () {
 		$(this).removeClass('open');
 		$('#videoModal').removeClass('open');
+		$('#videoModal').html('');
 	});
 });
