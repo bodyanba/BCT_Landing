@@ -84,12 +84,13 @@ $(function () {
 
 	$('.movie-item img').click(function (e) {
 		var videoId = $(this).attr('data-id');
-		var $iframe = $("<iframe>").attr("src", 'https://www.youtube.com/embed/' + videoId + '?feature=oembed&v=' + videoId);
+		var $iframe = '<iframe id="videoModal" width="560" height="315" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe>';
 		$('#videoModal').html($iframe);
 		$('#overlay,#videoModal').addClass('open');
 	});
 	$('#overlay').click(function () {
 		$(this).removeClass('open');
 		$('#videoModal').removeClass('open');
+		$('#videoModal').html('');
 	});
 });
