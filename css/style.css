@@ -3002,14 +3002,48 @@ h6 {
     text-align: center;
     margin-top: 0px;
     font-size: 16px; }
-  .terminal .movie-item iframe {
+  .terminal .movie-item img {
     max-width: 100%;
-    padding: 20px;
-    border: 1px solid #3D3D3D; }
+    padding: 0px 20px;
+    border: 1px solid #3D3D3D;
+    cursor: pointer; }
 
 .terminal .movies-slider {
   margin: 0px -10px;
   margin-bottom: 10px; }
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: .3s ease;
+  visibility: hidden;
+  opacity: 0; }
+  #overlay.open {
+    opacity: 1;
+    visibility: visible; }
+
+#videoModal {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  z-index: 105;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+  visibility: hidden;
+  opacity: 0; }
+  #videoModal iframe {
+    width: 100%;
+    height: 100%; }
+  #videoModal.open {
+    opacity: 1;
+    visibility: visible; }
 
 .bag {
   min-height: 100vh;
