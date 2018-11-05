@@ -254,6 +254,14 @@
 <script type="text/javascript" src="libs/slick/slick.js"></script>
 <script type="text/javascript" src="js/selectize.min.js"></script>
 <script src="js/scripts.js"></script>
-
+<script>
+	var select_html = '';
+	for (i = 0; i <= 60; i++) {
+		select_html += `
+			<option>Qty: ` + i + `</option>
+		`;
+	}
+	$(".column-3__row .basic-select").html(select_html);
+</script>
 </body>
 </html>
