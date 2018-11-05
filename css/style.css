@@ -2931,6 +2931,8 @@ h6 {
       .terminal section .image-info.security ul {
         margin-top: 15px; }
   .terminal section .btn {
+    display: block;
+    text-decoration: none;
     width: 137px;
     height: 35px;
     background: linear-gradient(#42a1ec, #0170c9);
