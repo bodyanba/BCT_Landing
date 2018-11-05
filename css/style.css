@@ -2468,7 +2468,8 @@ h6 {
     box-shadow: none;
     padding: 26px 18px 10px; }
   .basic-select.single .selectize-dropdown {
-    z-index: 11; }
+    z-index: 11;
+    padding-left: 18px; }
 
 /* Footer
 -----------------------------------------------------------------------------*/
@@ -3394,6 +3395,7 @@ h6 {
           display: none; }
       .cart__body .basic-select.single .selectize-dropdown {
         z-index: 11;
+        padding: 0;
         background: #f9f9f9;
         border: 1px solid #d0d0d0; }
 

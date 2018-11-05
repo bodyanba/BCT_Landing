@@ -13,7 +13,7 @@ $(function() {
 	
 	/*---------------------------------------------------*/
 
-	$('select').selectize();
+	//$('select').selectize();
 
 	/*---------------------------------------------------*/
 
@@ -92,5 +92,28 @@ $(function () {
 		$(this).removeClass('open');
 		$('#videoModal').removeClass('open');
 		$('#videoModal').html('');
+	});
+	
+	$.ajax({
+		url: 'https://restcountries.eu/rest/v2/all?fields=name',
+		async: false,
+		success: function (data) {
+			var countries_list = '';
+			for (var i = 0; i < data.length; i++) {
+				if (data[i].name == "United States of America") {
+					countries_list += `
+						<option selected>` + data[i].name + `</option>
+					`;
+				}
+				else {
+					countries_list += `
+						<option>` + data[i].name + `</option>
+					`;
+				}
+			}
+			$(".basic-select.country").html(countries_list);
+			
+			$('select').selectize();
+		},
 	});
 });
