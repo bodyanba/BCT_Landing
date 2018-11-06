@@ -2470,6 +2470,10 @@ h6 {
   .basic-select.single .selectize-dropdown {
     z-index: 11;
     padding-left: 18px; }
+  .basic-select.single.country .selectize-dropdown {
+    padding-left: 16px; }
+  .basic-select.single.city .selectize-dropdown {
+    padding-left: 8px; }
 
 /* Footer
 -----------------------------------------------------------------------------*/

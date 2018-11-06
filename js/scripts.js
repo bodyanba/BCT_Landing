@@ -94,26 +94,26 @@ $(function () {
 		$('#videoModal').html('');
 	});
 	
+
 	$.ajax({
-		url: 'https://restcountries.eu/rest/v2/all?fields=name',
-		async: false,
+		url: 'https://transit.api.here.com/v3/coverage/city.json?app_id=VSsLMGuAIbLdZB43Xz8m&app_code=6etP4l-MU3ln22TAoIupOA',
+		async: true,
 		success: function (data) {
-			var countries_list = '';
-			for (var i = 0; i < data.length; i++) {
-				if (data[i].name == "United States of America") {
-					countries_list += `
-						<option selected>` + data[i].name + `</option>
-					`;
-				}
-				else {
-					countries_list += `
-						<option>` + data[i].name + `</option>
-					`;
-				}
+			cities = data.Res.Coverage.Cities.City;
+
+			var initial_cities = cities.filter((item) => {
+				return item.country == "United States";
+			})
+			
+			var cities_downlist = '';
+			for (var i = 0; i < initial_cities.length; i++) {
+				cities_downlist += `
+					<option>` + initial_cities[i].name + ', ' +  initial_cities[i].state + `</option>
+				`;
 			}
-			$(".basic-select.country").html(countries_list);
+			$(".basic-select.city").html(cities_downlist);
 			
 			$('select').selectize();
-		},
+		}
 	});
 });

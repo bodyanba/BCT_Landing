@@ -311,4 +311,16 @@
 		z-index: 11;
 		padding-left: 18px;
 	}
+
+	&.country {
+		.selectize-dropdown{
+			padding-left: 16px;
+		}
+	}
+
+	&.city {
+		.selectize-dropdown{
+			padding-left: 8px;
+		}
+	}
 }
