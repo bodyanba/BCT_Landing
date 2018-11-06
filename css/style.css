@@ -109,6 +109,8 @@ h3, .h3 {
   min-height: calc(100vh - 53px); }
   .section-1 .img-bunner {
     max-width: calc(100% + 60px); }
+  .section-1 .button {
+    margin-left: 22px; }
 
 ul.list-blue {
   padding-left: 0;
