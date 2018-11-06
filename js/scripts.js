@@ -16,8 +16,31 @@ $(document).ready(function () {
     margin: 10,
     loop: true,
     dots: false,
-    // nav: true,
+    nav: true,
     navText: ["", ""],
+  });
+
+  $(".owl-4").owlCarousel({
+    items: 1,
+    autoplay: true,
+    loop: true,
+    nav: true,
+    navText: ["", ""],
+    dotsContainer: ".owl-header .owl-dots",
+  });
+
+  $(".owl-5").owlCarousel({
+    items: 3,
+    margin: 80,
+    loop: true,
+    dots: false,
+    nav: true,
+    navText: ["", ""],
+  });
+
+  $('#aside-nav a').mPageScroll2id({
+    scrollSpeed: 900,
+    offset: 53,
   });
 
 });
